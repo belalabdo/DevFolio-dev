@@ -7,5 +7,33 @@ import * as $ from 'jquery';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // From down to up fadeIn
+    $('#dropdownMenuBtn, #dropdownMenu').hover(
+      function () {
+        $(this).find('#dropdownMenu').css('display', 'block');
+      },
+      function () {
+        $(this).find('#dropdownMenu').css('display', 'none');
+      }
+    );
+
+    // From display none to display block
+    /*$('#dropdownMenuBtn').mouseenter(() => {
+      $('#dropdownMenu').css('display', 'block');
+    });
+    $('#dropdownMenuBtn').mouseleave(() => {
+      $('#dropdownMenu').css('display', 'none');
+    });*/
+  }
+  // ngOnInit(): void {
+  //   $('#dropdownMenuBtn').hover(
+  //     function () {
+  //       $(this).find('#dropdownMenu').css('display', 'block');
+  //     },
+  //     function () {
+  //       $(this).find('#dropdownMenu').css('display', 'none');
+  //     }
+  //   );
+  // }
 }
