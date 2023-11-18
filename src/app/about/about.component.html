@@ -1,0 +1,55 @@
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-info col-md-6">
+        <div class="info-card row">
+          <div class="col-md-5">
+            <img
+              src="../../assets/testimonial-2.jpg"
+              class="rounded img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col-md-7">
+            <p><span>Name: </span>Morgan Freeman</p>
+            <p><span>Profile: </span>full-stack developer</p>
+            <p><span>Email: </span>contact@example.com</p>
+            <p><span>Phone: </span>(617) 557-0089</p>
+          </div>
+        </div>
+        <div class="info-skills">
+          <p>Skill</p>
+          <figure class="skill mb-3" *ngFor="let skill of skills">
+            <figcaption class="mb-1">
+              {{ skill.skillName }} {{ skill.skillValue }}
+            </figcaption>
+            <div class="prog-bar">
+              <div class="prog" [style.width]="skill.skillValue"></div>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <div class="about-desc col-md-6">
+        <div class="title">
+          <h5>About me</h5>
+        </div>
+        <p>
+          Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+          Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+          Nulla porttitor accumsan tincidunt.
+        </p>
+        <p>
+          Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus
+          suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit
+          amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+        </p>
+        <p>
+          Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut
+          lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt.
+          Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
