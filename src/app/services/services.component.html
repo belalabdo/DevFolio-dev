@@ -1,0 +1,23 @@
+<section id="services">
+  <div class="container">
+    <div class="title text-center">
+      <h3>services</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="row">
+      <div class="item col-4" *ngFor="let service of services">
+        <article>
+          <figure>
+            <span class="rounded-circle">
+              <i [class]="service.serviceIconClass"></i>
+            </span>
+            <figcaption>{{ service.serviceName }}</figcaption>
+          </figure>
+          <p>
+            {{ service.serviceDesc }}
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>

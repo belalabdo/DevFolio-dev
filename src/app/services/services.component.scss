@@ -1,0 +1,97 @@
+#services .container {
+  padding: 48px 0;
+}
+
+#services .title {
+  margin-bottom: 64px;
+}
+
+#services .title h3 {
+  color: #1e1e1e;
+
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#services .title p {
+  position: relative;
+
+  color: #4e4e4e;
+}
+
+#services .title p::after {
+  content: "";
+
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+
+  width: 40px;
+  height: 5px;
+
+  background-color: #0078ff;
+
+  transform: translateX(-50%);
+}
+
+#services .row .item article {
+  // display: flex;
+  // justify-content: center;
+
+  padding: 2.5rem 1.3rem;
+  margin-bottom: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+
+  background-color: #fff;
+}
+
+#services .row .item figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+#services .row .item figure span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 0 10px #0078ff;
+
+  color: #1e1e1e;
+
+  font-size: 40px;
+
+  transition: all 500ms ease;
+}
+
+#services .row .item article:hover figure span {
+  color: #fff;
+  background-color: #0078ff;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+#services .row .item figure figcaption {
+  padding: 0.4rem 0;
+  margin-bottom: 0.5rem;
+
+  color: #1e1e1e;
+
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+#services .row .item p {
+  color: #4e4e4e;
+  text-align: center;
+  margin-bottom: 1rem;
+}
