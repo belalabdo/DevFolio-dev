@@ -8,9 +8,10 @@ import { AppComponent } from './app/app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, HeaderComponent, AboutComponent],
+  declarations: [AppComponent, NavbarComponent, HeaderComponent, AboutComponent, ServicesComponent],
   imports: [BrowserModule, AppRoutingModule, NgxTypedJsModule],
   providers: [],
   bootstrap: [AppComponent],
