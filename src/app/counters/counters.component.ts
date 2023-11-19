@@ -30,5 +30,9 @@ export class CountersComponent {
       value: 48,
     },
   ];
-  options: CountUpOptions = { enableScrollSpy: true, duration: 1.5 };
+  options: CountUpOptions = {
+    enableScrollSpy: true,
+    scrollSpyOnce: true,
+    duration: 1.5,
+  };
 }
