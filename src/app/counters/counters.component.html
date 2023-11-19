@@ -1,9 +1,23 @@
-<!-- <div class="counters-section">
-  <figure>
-    <div class="counter">
-      <span></span>
-      <span></span>
+<div class="counters-section">
+  <div class="layer">
+    <div class="container">
+      <div class="row">
+        <div
+          class="counter col-3 text-center text-white"
+          *ngFor="let counter of counters"
+        >
+          <figure>
+            <span class="rounded-circle mb-4"
+              ><i [class]="counter.class"></i
+            ></span>
+            <figcaption
+              [countUp]="counter.value"
+              [options]="options"
+            ></figcaption>
+          </figure>
+          <span class="text-uppercase">{{ counter.name }} </span>
+        </div>
+      </div>
     </div>
-    <figcaption></figcaption>
-  </figure>
-</div> -->
+  </div>
+</div>
