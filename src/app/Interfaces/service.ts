@@ -1,7 +1,5 @@
-import { Icon } from './icon';
-
 export interface Service {
   serviceName: string;
-  serviceIcon: Icon;
+  serviceIconClass: string;
   serviceDesc: string;
 }
