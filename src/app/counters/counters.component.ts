@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Counter } from '../counter';
-import { CountUpOptions } from '../count-up-options';
+import { Counter } from '../Interfaces/counter';
+import { CountUpOptions } from '../Interfaces/count-up-options';
 
 @Component({
   selector: 'app-counters',

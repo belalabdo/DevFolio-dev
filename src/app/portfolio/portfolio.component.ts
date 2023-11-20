@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Work } from '../work';
+import { Work } from '../Interfaces/work';
 import * as $ from 'jquery';
 
 @Component({
