@@ -12,6 +12,10 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { CountersComponent } from './counters/counters.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ClientSpeakComponent } from './client-speak/client-speak.component';
+import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +26,10 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     ServicesComponent,
     CountersComponent,
     PortfolioComponent,
+    ClientSpeakComponent,
+    BlogComponent,
+    ContactComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgxTypedJsModule, CountUpModule],
   providers: [],
