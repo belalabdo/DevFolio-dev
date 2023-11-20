@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { CountersComponent } from './counters/counters.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CountersComponent } from './counters/counters.component';
     AboutComponent,
     ServicesComponent,
     CountersComponent,
+    PortfolioComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgxTypedJsModule, CountUpModule],
   providers: [],
