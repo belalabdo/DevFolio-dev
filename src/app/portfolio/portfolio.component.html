@@ -1,0 +1,57 @@
+<section id="portfolio">
+  <div class="container">
+    <div class="title text-center">
+      <h3>portfolio</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="row g-5">
+      <div class="col-4" *ngFor="let work of works; index as i">
+        <div class="work-box">
+          <div class="work-img" (click)="enterSlider(i)">
+            <img [src]="work.img" [alt]="work.workAlt" />
+          </div>
+          <div class="work-content">
+            <div class="work-info">
+              <h4>{{ work.name }}</h4>
+              <p>
+                <span class="text-primary text-capitalize">{{
+                  work.category
+                }}</span>
+                /
+                <span>{{ work.date }}</span>
+              </p>
+            </div>
+            <div class="add">
+              <a href="#" class="text-primary">
+                <span class="fs-1"
+                  ><i class="fa-solid fa-circle-plus"></i
+                ></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio-carousel">
+    <div class="exit" (click)="exitSlider()">
+      <span class="text-white"><i class="fa-solid fa-xmark fs-2"></i></span>
+    </div>
+    <div class="arrows text-white px-3">
+      <span class="p-3" (click)="slide(-1)"
+        ><i class="fa-solid fa-arrow-left fs-2"></i
+      ></span>
+      <span class="p-3" (click)="slide(1)"
+        ><i class="fa-solid fa-arrow-right fs-2"></i
+      ></span>
+    </div>
+    <div class="preview container h-100">
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <img
+          [src]="works[currentWorkSlide].img"
+          [alt]="works[currentWorkSlide].workAlt"
+        />
+      </div>
+    </div>
+  </div>
+</section>

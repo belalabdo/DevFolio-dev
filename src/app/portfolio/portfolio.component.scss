@@ -1,0 +1,115 @@
+#portfolio .container {
+  padding: 48px 0;
+}
+
+#portfolio .title {
+  margin-bottom: 64px;
+}
+
+#portfolio .title h3 {
+  color: #1e1e1e;
+
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#portfolio .title p {
+  position: relative;
+
+  color: #4e4e4e;
+}
+
+#portfolio .title p::after {
+  content: "";
+
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+
+  width: 40px;
+  height: 5px;
+
+  background-color: #0078ff;
+
+  transform: translateX(-50%);
+}
+
+#portfolio .work-box {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio .work-box .work-img {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#portfolio .work-box .work-img img {
+  width: 100%;
+  transition: all 1s;
+}
+
+#portfolio .work-box:hover .work-img img {
+  transform: scale(1.2);
+}
+
+#portfolio .work-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 1rem 1rem;
+  background-color: #fff;
+}
+
+#portfolio .work-content .work-info h4 {
+  font-size: 1.2rem;
+}
+#portfolio .work-content .work-info p {
+  color: #4e4e4e;
+  font-size: 0.8rem;
+}
+
+#portfolio .work-content .add span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Carousel
+
+.portfolio-carousel {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  opacity: 0;
+}
+
+.portfolio-carousel .preview img {
+  max-width: 10%;
+}
+
+.portfolio-carousel .exit {
+  position: fixed;
+  inset: 2% 2% auto auto;
+  cursor: pointer;
+}
+
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  right: 0;
+
+  transform: translateY(-50%);
+}
+
+.arrows span {
+  border: 1px #4e4e4e solid;
+  cursor: pointer;
+}
